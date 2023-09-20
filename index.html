@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+
+                <div class="logo"><a href="#">MotherFucker</a></div>
+                <div class="menu-bar">
+                    <ul id="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                        <div class="close" id="xnxx"><i class="ri-close-line"></i></div>
+                    </ul>
+                </div>
+
+
+                <div class="toggle" id="hamburger">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <script>
+        let menu = document.getElementById('menu');
+        let hamburger = document.getElementById('hamburger');
+        let xnxx = document.getElementById('xnxx');
+        let body = document.querySelector('.wrapper');
+
+
+        hamburger.addEventListener('click', function () {
+            menu.classList.toggle('showmenu')
+        })
+        xnxx.addEventListener('click', function () {
+            menu.classList.toggle('showmenu')
+
+        })
+        body.addEventListener('click', function () {
+            body.classList.remove('showmenu');
+        })
+
+
+
+    </script>
+</body>
+
+</html>
